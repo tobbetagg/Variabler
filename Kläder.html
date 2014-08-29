@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script>
+            var grader, kläder, väder;
+            
+            grader = prompt("Hur många grader är det?");
+            väder = prompt("Hur är vädret? Soligt/Regnigt");
+            if(väder == "Regnigt" || väder == "regnigt") {
+                if(grader < 10) {
+                    kläder = "regnjacka";
+                } else if (grader < 20) {
+                    kläder = "Regnjacka och T-shirt";
+                } else if (grader < 30) {
+                    kläder = "BAADBRALLOR";
+                } else if (grader > 29) {
+                    kläder = "Naken";
+                } else {
+                    kläder = "Är det inga grader alls?"
+                }
+            } else if (väder == "Soligt" || väder == "soligt") {
+                if(grader < 10) {
+                    kläder = "Sommarjacka";
+                } else if (grader < 20) {
+                    kläder = "Tjocktröja";
+                } else if (grader < 30) {
+                    kläder = "T-Shirt";
+                } else if (grader > 29) {
+                    kläder = "Naken";
+                } else {
+                    kläder = "Är det inga grader alls?"
+                }
+            } else {
+                kläder = "Är det inget  väder alls?"
+            }
+        alert (kläder);
+        
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
